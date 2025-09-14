@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="../../../components/cdn/tailwind.js"></script>
+</head>
+
+<body class="w-screen h-screen flex flex-row">
+    <div class="w-3/5 h-screen relative">
+        <img src="../../../assets/image/bg_left.png" alt="bg_left" class="h-full w-full object-cover opacity-50">
+        <div class="bg-red-300 p-[30px] flex flex-col items-center gap-4 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <img src="../../../assets/image/logo.png" alt="Logo" class="w-[100px]">
+            <h1 class="text-3xl font-bold">To do App</h1>
+        </div>
+    </div>
+    <div class="flex-1 h-screen relative flex flex-col justify-center items-center">
+        <div class="w-3/5 p-4 bg-slate-300">
+            <h2>Sign Up</h2>
+            <form action="">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <a href="">Forgot Password?</a>
+                <button type="submit">Sign Up</button>
+                <p>Don't have an account? <a href="../signin/">Sign In</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
